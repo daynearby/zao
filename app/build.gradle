@@ -17,10 +17,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    //bmob
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
     compile project(':multiImageSelector')
+    //bmob base libs
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    //bmob push libs
+    compile 'cn.bmob.android:bmob-push:0.8'
+    //bmob sdk compat android 6.0
+    compile 'cn.bmob.android:http-legacy:1.0'
 }
