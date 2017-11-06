@@ -10,6 +10,10 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        //for android  platform
+        /*ndk {
+            abiFilters 'armeabi','armeabi-v7a','arm64-v8a'
+        }*/
     }
     buildTypes {
         release {
@@ -19,6 +23,12 @@ android {
     }
     //bmob
     useLibrary 'org.apache.http.legacy'
+    externalNativeBuild {
+        cmake {
+            path 'CMakeLists.txt'
+        }
+    }
+
 }
 
 dependencies {
