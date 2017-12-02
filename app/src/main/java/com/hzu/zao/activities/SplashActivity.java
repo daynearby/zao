@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import com.hzu.zao.MainActivity;
-
 import cn.bmob.v3.Bmob;
 
 /**
@@ -16,15 +14,14 @@ import cn.bmob.v3.Bmob;
 public class SplashActivity extends AppCompatActivity {
 
     final long DELAY = 2000L;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
+        //两秒的时长，还是说后面添加一个开屏广告，这个不错的感觉
+        new Handler().postDelayed(()->{
                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
                 SplashActivity.this.finish();
-            }
         },DELAY);
         //
         Bmob.initialize(this, getBmobApplication());
@@ -36,5 +33,6 @@ public class SplashActivity extends AppCompatActivity {
     static {
         System.loadLibrary("configLoader");
     }
+
 
 }

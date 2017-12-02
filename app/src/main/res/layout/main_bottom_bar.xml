@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_bottom_bar_height"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/id_im_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_btn_main"
+        />
+    <ImageView
+        android:id="@+id/id_im_post_history"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_btn_post_history"/>
+    <ImageView
+        android:id="@+id/id_im_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_btn_messages"/>
+    <ImageView
+        android:id="@+id/id_im_user_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_btn_user_manager"/>
+</LinearLayout>

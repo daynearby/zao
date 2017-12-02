@@ -3,17 +3,12 @@ package me.nereo.multi_image_selector.view;
 import android.content.Context;
 import android.graphics.Matrix;
 import android.support.v4.view.GestureDetectorCompat;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v4.view.ScaleGestureDetectorCompat;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.view.DragEvent;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.ViewConfiguration;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 /**
  * 支持手势的ImageView

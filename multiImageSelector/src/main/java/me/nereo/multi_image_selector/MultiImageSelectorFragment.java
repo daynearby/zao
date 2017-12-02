@@ -2,6 +2,7 @@ package me.nereo.multi_image_selector;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
@@ -103,10 +104,10 @@ public class MultiImageSelectorFragment extends Fragment {
     private File mTmpFile;
 
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
+    public void onAttach(Context context) {
+        super.onAttach(context);
         try {
-            mCallback = (Callback) activity;
+            mCallback = (Callback) context;
         }catch (ClassCastException e){
             throw new ClassCastException("The Activity must implement MultiImageSelectorFragment.Callback interface...");
         }
